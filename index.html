@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+     <script src="https://rawgit.com/chenzlabs/auto-detect-controllers/master/dist/aframe-auto-detect-controllers-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-gradient-sky@1.0.4/dist/gradientsky.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v2.1.0/dist/aframe-physics-system.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+     
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+</div>
+<header>
+<h1>LOGO</h1>
+   
+  </header>
+
+
+  <body>
+    <div class="scene">
+      <a-scene embedded physics>
+        <a-entity auto-detect-controllers></a-entity>
+        <a-assets>
+          <a-asset-item
+            id="bungeeFont"
+            src="./assets/fonts/Nunito_Regular.json"
+          ></a-asset-item>
+          <a-asset-item
+            id="pacificoFont"
+            src="./assets/fonts/Pacifico_Regular.json"
+          ></a-asset-item>
+          <a-asset-item
+          id="logo"
+          src="https://d3i9te5634opuo.cloudfront.net/angellxr-glb.glb"
+          >
+        </a-assets>
+        <a-sky color="#000"></a-sky>
+        <a-entity gltf-model="#logo" position="0 2 -5" scale=".2 .2 .2" animation="property: rotation; to: 0 -360 0; loop: true; dur: 30000; easeInOut: true"></a-entity>
+        <a-plane rotation="-90 -90 0" width="30" height="50" color="#000"></a-plane>
+       
+      </a-scene>
+    </div>
+    <div class="projects">
+      <h2>AngellXR</h2>
+     
+      <section class="best">
+        
+        <div>
+        
+        <p>
+          We work with some of the world’s leading dentists and dental scientists to provide you with the best products to care for your teeth and gums.
+        </p>
+        </div>
+      </section>
+      
+     
+      
+
+
+<script src="header.js"></script>
+<script src="animation.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
