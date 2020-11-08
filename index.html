@@ -6,14 +6,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     />
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-     <script src="https://rawgit.com/chenzlabs/auto-detect-controllers/master/dist/aframe-auto-detect-controllers-component.min.js"></script>
+    <!-- <script src="https://rawgit.com/chenzlabs/auto-detect-controllers/master/dist/aframe-auto-detect-controllers-component.min.js"></script> -->
     <!-- <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script> -->
-    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    <!-- <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
     <script src="https://unpkg.com/aframe-gradient-sky@1.0.4/dist/gradientsky.min.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v2.1.0/dist/aframe-physics-system.min.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.js"></script>
     <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
-     
+      -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 <header>
@@ -27,12 +27,13 @@
       <a-scene embedded physics>
         <a-entity auto-detect-controllers></a-entity>
         <a-assets>
+          <img id="sky" src="https://cdn.glitch.com/2fa39cc3-dabf-4910-b818-158ecc49d6df%2F360RivaStorm1.JPG?v=1604861429695">
           <a-asset-item
           id="logo"
           src="https://cdn.glitch.com/2fa39cc3-dabf-4910-b818-158ecc49d6df%2FAngellXR-rounded.glb?v=1604858582941"
                         ></a-asset-item>
         </a-assets>
-        <a-sky color="#000"></a-sky>
+        <a-sky src="#sky"></a-sky>
         <a-entity gltf-model="#logo" position="0 2 -5" scale=".2 .2 .2" animation="property: rotation; to: 0 -360 0; loop: true; dur: 6000; easeInOut: true"></a-entity>
         <a-plane rotation="-90 -90 0" width="30" height="50" color="#333333"></a-plane>
        
