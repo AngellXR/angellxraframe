@@ -16,10 +16,8 @@
      
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-
-</div>
 <header>
-<h1>LOGO</h1>
+<!-- <h1>Place header in here </h1> -->
    
   </header>
 
@@ -30,21 +28,13 @@
         <a-entity auto-detect-controllers></a-entity>
         <a-assets>
           <a-asset-item
-            id="bungeeFont"
-            src="./assets/fonts/Nunito_Regular.json"
-          ></a-asset-item>
-          <a-asset-item
-            id="pacificoFont"
-            src="./assets/fonts/Pacifico_Regular.json"
-          ></a-asset-item>
-          <a-asset-item
           id="logo"
-          src="https://d3i9te5634opuo.cloudfront.net/angellxr-rounded.glb"
-          >
+          src="https://cdn.glitch.com/2fa39cc3-dabf-4910-b818-158ecc49d6df%2FAngellXR-rounded.glb?v=1604858582941"
+                        ></a-asset-item>
         </a-assets>
         <a-sky color="#000"></a-sky>
-        <a-entity gltf-model="#logo" position="0 2 -5" scale=".2 .2 .2" animation="property: rotation; to: 0 -360 0; loop: true; dur: 30000; easeInOut: true"></a-entity>
-        <a-plane rotation="-90 -90 0" width="30" height="50" color="#000"></a-plane>
+        <a-entity gltf-model="#logo" position="0 2 -5" scale=".2 .2 .2" animation="property: rotation; to: 0 -360 0; loop: true; dur: 6000; easeInOut: true"></a-entity>
+        <a-plane rotation="-90 -90 0" width="30" height="50" color="#333333"></a-plane>
        
       </a-scene>
     </div>
